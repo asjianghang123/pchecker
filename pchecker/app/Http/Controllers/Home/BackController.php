@@ -16,6 +16,8 @@ class BackController extends Controller
 
         setCookie("user","$data",$time);
 
+        $data = UserFiles::uploadfile('file');
+
         return view("home.index");
 
 
